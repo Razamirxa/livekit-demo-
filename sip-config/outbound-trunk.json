@@ -1,0 +1,9 @@
+{
+    "trunk": {
+        "name": "Twilio Outbound",
+        "outbound_number": "+1234567890",
+        "outbound_address": "your-trunk-name.pstn.twilio.com",
+        "outbound_username": "your-twilio-username",
+        "outbound_password": "your-twilio-password"
+    }
+}

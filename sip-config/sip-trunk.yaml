@@ -1,0 +1,103 @@
+# SIP Trunk Configuration
+# Configure your SIP trunk provider (Twilio, Telnyx, etc.)
+# sip-trunk.yaml
+
+# ============================================
+# INBOUND TRUNK (Receiving calls)
+# ============================================
+# This is for calls COMING IN to your agent
+
+inbound_trunks:
+  # Twilio Example
+  - name: "twilio-inbound"
+    # Twilio's SIP domain - calls from Twilio will come from these IPs
+    # Get the IP ranges from your provider
+    allowed_addresses:
+      - "54.172.60.0/30"      # Twilio North America
+      - "54.244.51.0/30"      # Twilio US West
+      - "54.171.127.192/30"   # Twilio EU Ireland
+      # Add more Twilio IPs as needed
+    
+    # Optional: Authentication
+    # auth_username: ""
+    # auth_password: ""
+
+  # Telnyx Example
+  - name: "telnyx-inbound"
+    allowed_addresses:
+      - "64.16.70.0/24"       # Telnyx IPs
+      - "185.246.36.0/24"
+
+# ============================================
+# OUTBOUND TRUNK (Making calls)
+# ============================================
+# This is for calls GOING OUT from your agent
+
+outbound_trunks:
+  # Twilio Outbound
+  - name: "twilio-outbound"
+    address: "your-sip-domain.pstn.twilio.com"
+    transport: udp  # or tcp, tls
+    
+    # Your Twilio credentials
+    auth_username: "YOUR_TWILIO_ACCOUNT_SID"
+    auth_password: "YOUR_TWILIO_AUTH_TOKEN"
+
+  # Telnyx Outbound  
+  - name: "telnyx-outbound"
+    address: "sip.telnyx.com"
+    transport: tls
+    
+    auth_username: "YOUR_TELNYX_SIP_USERNAME"
+    auth_password: "YOUR_TELNYX_SIP_PASSWORD"
+
+# ============================================
+# DISPATCH RULES
+# ============================================
+# How to route incoming calls to LiveKit rooms
+
+dispatch_rules:
+  # Route all calls from twilio-inbound to a room
+  - name: "route-to-agent"
+    trunk_ids: 
+      - "twilio-inbound"
+      - "telnyx-inbound"
+    rule:
+      # Option 1: Direct dispatch - all calls go to same room
+      dispatchRuleDirect:
+        room_name: "voice-agent-room"
+        pin: ""  # Optional: require PIN to join
+      
+      # Option 2: Individual dispatch - each call gets unique room
+      # dispatchRuleIndividual:
+      #   room_prefix: "call-"  # Creates rooms like "call-abc123"
+      #   pin: ""
+
+# ============================================
+# EXAMPLE: Complete Twilio Setup
+# ============================================
+# 
+# 1. Create a Twilio account at twilio.com
+# 2. Get a phone number
+# 3. Create a SIP Domain in Twilio Console:
+#    - Go to: Programmable Voice > SIP Domains
+#    - Create new domain (e.g., "myagent.sip.twilio.com")
+#    - Set Voice URL to your LiveKit SIP IP
+# 4. Configure the phone number to use the SIP domain
+# 5. Update this file with your credentials
+#
+# ============================================
+
+# ============================================
+# EXAMPLE: Complete Telnyx Setup
+# ============================================
+#
+# 1. Create a Telnyx account at telnyx.com
+# 2. Create a SIP Connection:
+#    - Go to: SIP Connections > Add SIP Connection
+#    - Type: IP Authentication or Credentials
+#    - Add your LiveKit SIP server IP
+# 3. Buy a phone number and assign to SIP connection
+# 4. Update this file with your credentials
+#
+# ============================================

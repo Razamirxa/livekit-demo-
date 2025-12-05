@@ -1,0 +1,48 @@
+# Docker Compose for Self-Hosted LiveKit with SIP
+
+services:
+  # Redis - Required for LiveKit
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  # LiveKit Server
+  livekit-server:
+    image: livekit/livekit-server:latest
+    ports:
+      - "7880:7880"   # HTTP API
+      - "7881:7881"   # WebRTC TCP
+      - "7882:7882/udp" # WebRTC UDP
+    environment:
+      LIVEKIT_KEYS: "APIKey: secretsecretsecretsecret"
+      LIVEKIT_REDIS_ADDRESS: "redis:6379"
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+  # LiveKit SIP Service
+  livekit-sip:
+    image: livekit/sip:latest
+    ports:
+      - "5060:5060/udp"   # SIP UDP
+      - "5060:5060/tcp"   # SIP TCP
+      - "5061:5061/tcp"   # SIP TLS
+      - "10000-10100:10000-10100/udp"  # RTP Media ports
+    command:
+      - "--config-body"
+      - |
+        api_key: APIKey
+        api_secret: secretsecretsecretsecret
+        ws_url: ws://livekit-server:7880
+        redis:
+          address: redis:6379
+        sip:
+          listen:
+            address: 0.0.0.0
+            port: 5060
+    depends_on:
+      - livekit-server
+      - redis
+    restart: unless-stopped

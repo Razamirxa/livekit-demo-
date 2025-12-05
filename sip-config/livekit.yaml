@@ -1,0 +1,24 @@
+# LiveKit Server Configuration
+# livekit.yaml
+
+port: 7880
+rtc:
+  port_range_start: 50000
+  port_range_end: 60000
+  tcp_port: 7881
+  use_external_ip: true
+
+redis:
+  address: redis:6379
+
+keys:
+  devkey: secret
+
+# Enable logging
+logging:
+  level: info
+  
+# Room settings
+room:
+  auto_create: true
+  empty_timeout: 300  # 5 minutes

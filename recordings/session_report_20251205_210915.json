@@ -1,0 +1,765 @@
+{
+  "job_id": "AJ_8g3fmZRrtKPw",
+  "room_id": "RM_AdRBMvusqXrE",
+  "room": "playground-loyk-D2iK",
+  "events": [
+    {
+      "type": "agent_state_changed",
+      "old_state": "initializing",
+      "new_state": "listening",
+      "created_at": 1764950910.5771313
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "generate_reply",
+      "created_at": 1764950910.5817313
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "thinking",
+      "created_at": 1764950913.8484342
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "thinking",
+      "new_state": "speaking",
+      "created_at": 1764950915.6492677
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "listening",
+      "new_state": "speaking",
+      "created_at": 1764950919.3691542
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950919.8186328
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950920.3199134
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "tell",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950920.754201
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "tell me",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950920.84516
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "listening",
+      "new_state": "speaking",
+      "created_at": 1764950921.319972
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "Tell me about",
+      "is_final": true,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950921.4870927
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_042489298213",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hello there! How can I assist you today? Need help with information,"
+        ],
+        "interrupted": true,
+        "transcript_confidence": null,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950915.649159,
+          "stopped_speaking_at": 1764950921.490609,
+          "llm_node_ttft": 4.4097502999939024,
+          "tts_node_ttfb": 0.5766574000008404
+        },
+        "created_at": 1764950913.8849618,
+        "hash": null
+      },
+      "created_at": 1764950921.4928923
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "tell",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950922.33961
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "tell me",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950922.3875287
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950922.6693304
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "generate_reply",
+      "created_at": 1764950922.6696596
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_15ed0fd4f802",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Tell me about"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.858715,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950919.3689337,
+          "stopped_speaking_at": 1764950922.1200836,
+          "transcription_delay": 0,
+          "end_of_turn_delay": 0.5493860244750977,
+          "on_user_turn_completed_delay": 1.1999945854768157e-06
+        },
+        "created_at": 1764950922.6695619,
+        "hash": null
+      },
+      "created_at": 1764950922.676348
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "thinking",
+      "created_at": 1764950922.6764455
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "tell me about",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950923.097329
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "thinking",
+      "new_state": "listening",
+      "created_at": 1764950923.0974996
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "tell me about",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950923.369776
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "Tell me about lifekit",
+      "is_final": true,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950923.551614
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "generate_reply",
+      "created_at": 1764950924.0554698
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_170f645f97ed",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Tell me about lifekit"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.9581072500000001,
+        "extra": {},
+        "metrics": {
+          "transcription_delay": 0,
+          "on_user_turn_completed_delay": 1.7999991541728377e-06
+        },
+        "created_at": 1764950924.0553968,
+        "hash": null
+      },
+      "created_at": 1764950924.0610359
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "thinking",
+      "created_at": 1764950924.0610998
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "thinking",
+      "new_state": "speaking",
+      "created_at": 1764950926.1177971
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "listening",
+      "new_state": "speaking",
+      "created_at": 1764950937.8183837
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950938.2691114
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "my name",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950938.890657
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950939.5192153
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "my name is",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950939.59579
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "my name is",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950939.6919334
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "My name is rizal.",
+      "is_final": true,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950940.4309995
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_aef40ce25f3a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lifekit is a broad term that can refer to various tools or resources designed to help improve daily living, organization, productivity, or personal well-being. It might be an app, a set of tips, a toolkit, or a platform"
+        ],
+        "interrupted": true,
+        "transcript_confidence": null,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950926.117705,
+          "stopped_speaking_at": 1764950940.4348285,
+          "llm_node_ttft": 1.2160189999995055,
+          "tts_node_ttfb": 0.8453262999973958
+        },
+        "created_at": 1764950924.0623078,
+        "hash": null
+      },
+      "created_at": 1764950940.4356778
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "generate_reply",
+      "created_at": 1764950940.4396646
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_05dbaf3dce20",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "My name is rizal."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.8110364999999999,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950937.8181999,
+          "stopped_speaking_at": 1764950938.9776654,
+          "transcription_delay": 1.456481695175171,
+          "end_of_turn_delay": 1.4566869735717773,
+          "on_user_turn_completed_delay": 2.2000021999701858e-06
+        },
+        "created_at": 1764950940.4395921,
+        "hash": null
+      },
+      "created_at": 1764950940.4464114
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "thinking",
+      "created_at": 1764950940.4465094
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "thinking",
+      "new_state": "speaking",
+      "created_at": 1764950942.2322562
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "listening",
+      "new_state": "speaking",
+      "created_at": 1764950946.519222
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_12ee104f278d",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Nice to meet you, Rizal! How can I help you today?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": null,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950942.232153,
+          "stopped_speaking_at": 1764950946.9691532,
+          "llm_node_ttft": 1.1949298999970779,
+          "tts_node_ttfb": 0.5958295999880647,
+          "e2e_latency": 3.2544875144958496
+        },
+        "created_at": 1764950940.4504507,
+        "hash": null
+      },
+      "created_at": 1764950946.9692194
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950946.9692953
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950947.321709
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "thank",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950947.5484416
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "Thank you.",
+      "is_final": true,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950947.601475
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "generate_reply",
+      "created_at": 1764950947.604764
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_97aa847b68b0",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Thank you."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.99122,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950946.5190415,
+          "stopped_speaking_at": 1764950946.8176224,
+          "transcription_delay": 0.786505937576294,
+          "end_of_turn_delay": 0.7866830825805664,
+          "on_user_turn_completed_delay": 2.0000006770715117e-06
+        },
+        "created_at": 1764950947.6047075,
+        "hash": null
+      },
+      "created_at": 1764950947.6145658
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "thinking",
+      "created_at": 1764950947.6146252
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "listening",
+      "new_state": "speaking",
+      "created_at": 1764950947.6228263
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "thinking",
+      "new_state": "listening",
+      "created_at": 1764950948.0697188
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950948.4686313
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "Goodbye.",
+      "is_final": true,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950948.7647135
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "generate_reply",
+      "created_at": 1764950948.7754438
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_710899185882",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Goodbye."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.938763,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950947.6224527,
+          "stopped_speaking_at": 1764950947.9190564,
+          "transcription_delay": 0.8483366966247559,
+          "end_of_turn_delay": 0.8486216068267822,
+          "on_user_turn_completed_delay": 2.0000006770715117e-06
+        },
+        "created_at": 1764950948.7753637,
+        "hash": null
+      },
+      "created_at": 1764950948.7850008
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "thinking",
+      "created_at": 1764950948.7850616
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "say",
+      "created_at": 1764950950.1795437
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "thinking",
+      "new_state": "speaking",
+      "created_at": 1764950950.8104055
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_7f08660748a5",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Goodbye! Have a great day!"
+        ],
+        "interrupted": false,
+        "transcript_confidence": null,
+        "extra": {},
+        "metrics": {},
+        "created_at": 1764950952.9008667,
+        "hash": null
+      },
+      "created_at": 1764950952.9008873
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950952.9009762
+    },
+    {
+      "type": "function_tools_executed",
+      "function_calls": [
+        {
+          "id": "item_d633e85b8c22/fnc_0",
+          "type": "function_call",
+          "call_id": "call_dK4TgLLoCdpBswL8QQ2hecIR",
+          "arguments": "{}",
+          "name": "hangup_call_tool",
+          "created_at": 1764950948.7872474
+        }
+      ],
+      "function_call_outputs": [
+        {
+          "id": "item_216c26672bdd",
+          "type": "function_call_output",
+          "name": "hangup_call_tool",
+          "call_id": "call_dK4TgLLoCdpBswL8QQ2hecIR",
+          "output": "",
+          "is_error": false,
+          "created_at": 1764950948.7872474
+        }
+      ],
+      "created_at": 1764950952.9678674
+    },
+    {
+      "type": "close",
+      "error": null,
+      "reason": "user_initiated",
+      "created_at": 1764950952.979154
+    }
+  ],
+  "audio_recording_path": "C:\\Users\\RAZA~1.MUS\\AppData\\Local\\Temp\\tmp5qbjs3c0\\audio.ogg",
+  "audio_recording_started_at": 1764950913.9110138,
+  "options": {
+    "allow_interruptions": true,
+    "discard_audio_if_uninterruptible": true,
+    "min_interruption_duration": 0.5,
+    "min_interruption_words": 0,
+    "min_endpointing_delay": 0.5,
+    "max_endpointing_delay": 3.0,
+    "max_tool_steps": 3,
+    "user_away_timeout": 15.0,
+    "min_consecutive_speech_delay": 0.0,
+    "preemptive_generation": false
+  },
+  "chat_history": {
+    "items": [
+      {
+        "id": "item_c0e29f694e27",
+        "type": "agent_handoff",
+        "new_agent_id": "assistant",
+        "created_at": 1764950908.101672
+      },
+      {
+        "id": "item_042489298213",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hello there! How can I assist you today? Need help with information,"
+        ],
+        "interrupted": true,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950915.649159,
+          "stopped_speaking_at": 1764950921.490609,
+          "llm_node_ttft": 4.4097502999939024,
+          "tts_node_ttfb": 0.5766574000008404
+        },
+        "created_at": 1764950913.8849618
+      },
+      {
+        "id": "item_15ed0fd4f802",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Tell me about"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.858715,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950919.3689337,
+          "stopped_speaking_at": 1764950922.1200836,
+          "transcription_delay": 0.0,
+          "end_of_turn_delay": 0.5493860244750977,
+          "on_user_turn_completed_delay": 1.1999945854768157e-06
+        },
+        "created_at": 1764950922.6695619
+      },
+      {
+        "id": "item_170f645f97ed",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Tell me about lifekit"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.9581072500000001,
+        "extra": {},
+        "metrics": {
+          "transcription_delay": 0.0,
+          "on_user_turn_completed_delay": 1.7999991541728377e-06
+        },
+        "created_at": 1764950924.0553968
+      },
+      {
+        "id": "item_aef40ce25f3a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lifekit is a broad term that can refer to various tools or resources designed to help improve daily living, organization, productivity, or personal well-being. It might be an app, a set of tips, a toolkit, or a platform"
+        ],
+        "interrupted": true,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950926.117705,
+          "stopped_speaking_at": 1764950940.4348285,
+          "llm_node_ttft": 1.2160189999995055,
+          "tts_node_ttfb": 0.8453262999973958
+        },
+        "created_at": 1764950924.0623078
+      },
+      {
+        "id": "item_05dbaf3dce20",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "My name is rizal."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.8110364999999999,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950937.8181999,
+          "stopped_speaking_at": 1764950938.9776654,
+          "transcription_delay": 1.456481695175171,
+          "end_of_turn_delay": 1.4566869735717773,
+          "on_user_turn_completed_delay": 2.2000021999701858e-06
+        },
+        "created_at": 1764950940.4395921
+      },
+      {
+        "id": "item_12ee104f278d",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Nice to meet you, Rizal! How can I help you today?"
+        ],
+        "interrupted": false,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950942.232153,
+          "stopped_speaking_at": 1764950946.9691532,
+          "llm_node_ttft": 1.1949298999970779,
+          "tts_node_ttfb": 0.5958295999880647,
+          "e2e_latency": 3.2544875144958496
+        },
+        "created_at": 1764950940.4504507
+      },
+      {
+        "id": "item_97aa847b68b0",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Thank you."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.99122,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950946.5190415,
+          "stopped_speaking_at": 1764950946.8176224,
+          "transcription_delay": 0.786505937576294,
+          "end_of_turn_delay": 0.7866830825805664,
+          "on_user_turn_completed_delay": 2.0000006770715117e-06
+        },
+        "created_at": 1764950947.6047075
+      },
+      {
+        "id": "item_710899185882",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Goodbye."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.938763,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950947.6224527,
+          "stopped_speaking_at": 1764950947.9190564,
+          "transcription_delay": 0.8483366966247559,
+          "end_of_turn_delay": 0.8486216068267822,
+          "on_user_turn_completed_delay": 2.0000006770715117e-06
+        },
+        "created_at": 1764950948.7753637
+      },
+      {
+        "id": "item_d633e85b8c22/fnc_0",
+        "type": "function_call",
+        "call_id": "call_dK4TgLLoCdpBswL8QQ2hecIR",
+        "arguments": "{}",
+        "name": "hangup_call_tool",
+        "created_at": 1764950948.7872474
+      },
+      {
+        "id": "item_216c26672bdd",
+        "type": "function_call_output",
+        "name": "hangup_call_tool",
+        "call_id": "call_dK4TgLLoCdpBswL8QQ2hecIR",
+        "output": "",
+        "is_error": false,
+        "created_at": 1764950948.7872474
+      },
+      {
+        "id": "item_7f08660748a5",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Goodbye! Have a great day!"
+        ],
+        "interrupted": false,
+        "extra": {},
+        "metrics": {},
+        "created_at": 1764950952.9008667
+      }
+    ]
+  },
+  "timestamp": 1764950955.181288
+}

@@ -1,0 +1,758 @@
+{
+  "job_id": "AJ_orb6Bsv3pcVi",
+  "room_id": "RM_F6LrsazLJEpB",
+  "room": "playground-W30E-hzqE",
+  "events": [
+    {
+      "type": "agent_state_changed",
+      "old_state": "initializing",
+      "new_state": "listening",
+      "created_at": 1764950359.6749084
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "generate_reply",
+      "created_at": 1764950359.6884532
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "thinking",
+      "created_at": 1764950362.047871
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "thinking",
+      "new_state": "speaking",
+      "created_at": 1764950364.530672
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_b6dbca58013f",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hello! How can I assist you today? Whether you need information, help with a task, or just want to chat, I'm here for you. What can I do for you?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": null,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950364.5305667,
+          "stopped_speaking_at": 1764950375.0283973,
+          "llm_node_ttft": 4.119652199995471,
+          "tts_node_ttfb": 0.5903855000069598
+        },
+        "created_at": 1764950362.6575332,
+        "hash": null
+      },
+      "created_at": 1764950375.0298312
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950375.0300815
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "listening",
+      "new_state": "speaking",
+      "created_at": 1764950375.6998234
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "yes i",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950377.5906484
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "yes i need",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950377.9694128
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "yes i need information",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950379.5438704
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "yes i need information about",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950380.1199546
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "yes i need information about whether",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950380.3885093
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950380.5044155
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "yes i need information about whether in",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950381.2027388
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "yes i need information about whether in new",
+      "is_final": false,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950381.2034264
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "Yes I need information about whether in new york",
+      "is_final": true,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950381.2091858
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "generate_reply",
+      "created_at": 1764950381.2247326
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_fa9bf5beb970",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Yes I need information about whether in new york"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.8462047777777777,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950375.6996295,
+          "stopped_speaking_at": 1764950379.9552727,
+          "transcription_delay": 1.2656068801879883,
+          "end_of_turn_delay": 1.2663638591766357,
+          "on_user_turn_completed_delay": 6.700007361359894e-06
+        },
+        "created_at": 1764950381.224357,
+        "hash": null
+      },
+      "created_at": 1764950381.2459624
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "thinking",
+      "created_at": 1764950381.2461195
+    },
+    {
+      "type": "function_tools_executed",
+      "function_calls": [
+        {
+          "id": "item_5fc5049e13b2/fnc_0",
+          "type": "function_call",
+          "call_id": "call_1tw8woB7fQ2BdMTt3eXeJshh",
+          "arguments": "{\"location\":\"New York\"}",
+          "name": "get_weather",
+          "created_at": 1764950384.6429331
+        }
+      ],
+      "function_call_outputs": [
+        {
+          "id": "item_89f136ee6fee",
+          "type": "function_call_output",
+          "name": "get_weather",
+          "call_id": "call_1tw8woB7fQ2BdMTt3eXeJshh",
+          "output": "Current weather in City of New York: -2.9 degrees Celsius, feels like -7.5 degrees. Conditions: clear sky. Humidity: 32%. Wind speed: 6.2 kilometers per hour. Tomorrow's forecast: high of 3.0 degrees, low of -1.0 degrees, moderate snow, 7% chance of precipitation.",
+          "is_error": false,
+          "created_at": 1764950384.6429331
+        }
+      ],
+      "created_at": 1764950384.6345785
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "thinking",
+      "new_state": "speaking",
+      "created_at": 1764950386.7744277
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "Three.",
+      "is_final": true,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950393.9447005
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950393.9448757
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_e48e30f2f89a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "The current weather in New York is -2.9 degrees Celsius with clear skies. It feels colder at -7.5 degrees. The"
+        ],
+        "interrupted": true,
+        "transcript_confidence": null,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950386.7741382,
+          "stopped_speaking_at": 1764950393.9499905,
+          "llm_node_ttft": 1.2375232999911532,
+          "tts_node_ttfb": 0.8985826999996789,
+          "e2e_latency": 6.818865537643433
+        },
+        "created_at": 1764950384.6429331,
+        "hash": null
+      },
+      "created_at": 1764950393.9527366
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "generate_reply",
+      "created_at": 1764950393.9567902
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_38a947ef901e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Three."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.530336,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950392.4996195,
+          "stopped_speaking_at": 1764950392.5506027,
+          "transcription_delay": 1.3973805904388428,
+          "end_of_turn_delay": 1.3983943462371826,
+          "on_user_turn_completed_delay": 2.0999868866056204e-06
+        },
+        "created_at": 1764950393.9567058,
+        "hash": null
+      },
+      "created_at": 1764950393.9711874
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "thinking",
+      "created_at": 1764950393.9712474
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "thinking",
+      "new_state": "speaking",
+      "created_at": 1764950395.962942
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_5cbc4251a827",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "I\u2019m guessing you might want to know about the weather for the next three days? Let me check the forecast for New York for the next three days."
+        ],
+        "interrupted": false,
+        "transcript_confidence": null,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950395.9628322,
+          "stopped_speaking_at": 1764950402.2791853,
+          "llm_node_ttft": 1.293974000000162,
+          "tts_node_ttfb": 0.7066645000013523,
+          "e2e_latency": 3.412229537963867
+        },
+        "created_at": 1764950393.9742131,
+        "hash": null
+      },
+      "created_at": 1764950402.2792685
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950402.2793767
+    },
+    {
+      "type": "function_tools_executed",
+      "function_calls": [
+        {
+          "id": "item_5cbc4251a827/fnc_0",
+          "type": "function_call",
+          "call_id": "call_Tl2O35c2UiNrRHPzLT8uWmfT",
+          "arguments": "{\"location\":\"New York\"}",
+          "name": "get_weather",
+          "created_at": 1764950402.2998338
+        }
+      ],
+      "function_call_outputs": [
+        {
+          "id": "item_a2ad2314634f",
+          "type": "function_call_output",
+          "name": "get_weather",
+          "call_id": "call_Tl2O35c2UiNrRHPzLT8uWmfT",
+          "output": "Current weather in City of New York: -2.6 degrees Celsius, feels like -7.4 degrees. Conditions: clear sky. Humidity: 32%. Wind speed: 7.8 kilometers per hour. Tomorrow's forecast: high of 3.0 degrees, low of -1.0 degrees, moderate snow, 7% chance of precipitation.",
+          "is_error": false,
+          "created_at": 1764950402.2998338
+        }
+      ],
+      "created_at": 1764950402.2913418
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "thinking",
+      "created_at": 1764950402.2978199
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "listening",
+      "new_state": "speaking",
+      "created_at": 1764950403.6983805
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "thinking",
+      "new_state": "listening",
+      "created_at": 1764950404.0997217
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "speaking",
+      "created_at": 1764950404.1487982
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950404.1498003
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950404.44893
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "listening",
+      "new_state": "speaking",
+      "created_at": 1764950405.3497484
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "No",
+      "is_final": true,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950405.7526429
+    },
+    {
+      "type": "user_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950406.3083808
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "generate_reply",
+      "created_at": 1764950406.3096912
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_06c8b4d5420a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.517647,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950403.6981535,
+          "stopped_speaking_at": 1764950405.7564428,
+          "transcription_delay": 0,
+          "end_of_turn_delay": 0.5525481700897217,
+          "on_user_turn_completed_delay": 6.600006599910557e-06
+        },
+        "created_at": 1764950406.3094745,
+        "hash": null
+      },
+      "created_at": 1764950406.3387015
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "thinking",
+      "created_at": 1764950406.338883
+    },
+    {
+      "type": "user_input_transcribed",
+      "transcript": "Goodbye.",
+      "is_final": true,
+      "speaker_id": null,
+      "language": "en",
+      "created_at": 1764950406.8585136
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "thinking",
+      "new_state": "listening",
+      "created_at": 1764950406.8587499
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "generate_reply",
+      "created_at": 1764950407.36509
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_5f16c2c39c42",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Goodbye."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.719757,
+        "extra": {},
+        "metrics": {
+          "transcription_delay": 0,
+          "on_user_turn_completed_delay": 2.3000029614195228e-06
+        },
+        "created_at": 1764950407.3650153,
+        "hash": null
+      },
+      "created_at": 1764950407.3722568
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "listening",
+      "new_state": "thinking",
+      "created_at": 1764950407.3723204
+    },
+    {
+      "type": "speech_created",
+      "user_initiated": true,
+      "source": "say",
+      "created_at": 1764950408.7613742
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "thinking",
+      "new_state": "speaking",
+      "created_at": 1764950409.354175
+    },
+    {
+      "type": "conversation_item_added",
+      "item": {
+        "id": "item_283c902a4e90",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Goodbye! Have a great day!"
+        ],
+        "interrupted": false,
+        "transcript_confidence": null,
+        "extra": {},
+        "metrics": {},
+        "created_at": 1764950411.815906,
+        "hash": null
+      },
+      "created_at": 1764950411.8159492
+    },
+    {
+      "type": "agent_state_changed",
+      "old_state": "speaking",
+      "new_state": "listening",
+      "created_at": 1764950411.8160837
+    },
+    {
+      "type": "function_tools_executed",
+      "function_calls": [
+        {
+          "id": "item_1fe5fea45566/fnc_0",
+          "type": "function_call",
+          "call_id": "call_gNn3fJ3OuHwPcNgBFJw9vsSD",
+          "arguments": "{}",
+          "name": "hangup_call_tool",
+          "created_at": 1764950407.3728018
+        }
+      ],
+      "function_call_outputs": [
+        {
+          "id": "item_4bf6b95b8595",
+          "type": "function_call_output",
+          "name": "hangup_call_tool",
+          "call_id": "call_gNn3fJ3OuHwPcNgBFJw9vsSD",
+          "output": "",
+          "is_error": false,
+          "created_at": 1764950407.3728018
+        }
+      ],
+      "created_at": 1764950411.902488
+    },
+    {
+      "type": "close",
+      "error": null,
+      "reason": "user_initiated",
+      "created_at": 1764950411.9107397
+    }
+  ],
+  "audio_recording_path": "C:\\Users\\RAZA~1.MUS\\AppData\\Local\\Temp\\tmp9mkm6xr8\\audio.ogg",
+  "audio_recording_started_at": 1764950362.6699347,
+  "options": {
+    "allow_interruptions": true,
+    "discard_audio_if_uninterruptible": true,
+    "min_interruption_duration": 0.5,
+    "min_interruption_words": 0,
+    "min_endpointing_delay": 0.5,
+    "max_endpointing_delay": 3.0,
+    "max_tool_steps": 3,
+    "user_away_timeout": 15.0,
+    "min_consecutive_speech_delay": 0.0,
+    "preemptive_generation": false
+  },
+  "chat_history": {
+    "items": [
+      {
+        "id": "item_fc6a73f34df2",
+        "type": "agent_handoff",
+        "new_agent_id": "assistant",
+        "created_at": 1764950356.0942366
+      },
+      {
+        "id": "item_b6dbca58013f",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hello! How can I assist you today? Whether you need information, help with a task, or just want to chat, I'm here for you. What can I do for you?"
+        ],
+        "interrupted": false,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950364.5305667,
+          "stopped_speaking_at": 1764950375.0283973,
+          "llm_node_ttft": 4.119652199995471,
+          "tts_node_ttfb": 0.5903855000069598
+        },
+        "created_at": 1764950362.6575332
+      },
+      {
+        "id": "item_fa9bf5beb970",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Yes I need information about whether in new york"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.8462047777777777,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950375.6996295,
+          "stopped_speaking_at": 1764950379.9552727,
+          "transcription_delay": 1.2656068801879883,
+          "end_of_turn_delay": 1.2663638591766357,
+          "on_user_turn_completed_delay": 6.700007361359894e-06
+        },
+        "created_at": 1764950381.224357
+      },
+      {
+        "id": "item_5fc5049e13b2/fnc_0",
+        "type": "function_call",
+        "call_id": "call_1tw8woB7fQ2BdMTt3eXeJshh",
+        "arguments": "{\"location\":\"New York\"}",
+        "name": "get_weather",
+        "created_at": 1764950384.6429331
+      },
+      {
+        "id": "item_89f136ee6fee",
+        "type": "function_call_output",
+        "name": "get_weather",
+        "call_id": "call_1tw8woB7fQ2BdMTt3eXeJshh",
+        "output": "Current weather in City of New York: -2.9 degrees Celsius, feels like -7.5 degrees. Conditions: clear sky. Humidity: 32%. Wind speed: 6.2 kilometers per hour. Tomorrow's forecast: high of 3.0 degrees, low of -1.0 degrees, moderate snow, 7% chance of precipitation.",
+        "is_error": false,
+        "created_at": 1764950384.6429331
+      },
+      {
+        "id": "item_e48e30f2f89a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "The current weather in New York is -2.9 degrees Celsius with clear skies. It feels colder at -7.5 degrees. The"
+        ],
+        "interrupted": true,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950386.7741382,
+          "stopped_speaking_at": 1764950393.9499905,
+          "llm_node_ttft": 1.2375232999911532,
+          "tts_node_ttfb": 0.8985826999996789,
+          "e2e_latency": 6.818865537643433
+        },
+        "created_at": 1764950384.6429331
+      },
+      {
+        "id": "item_38a947ef901e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Three."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.530336,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950392.4996195,
+          "stopped_speaking_at": 1764950392.5506027,
+          "transcription_delay": 1.3973805904388428,
+          "end_of_turn_delay": 1.3983943462371826,
+          "on_user_turn_completed_delay": 2.0999868866056204e-06
+        },
+        "created_at": 1764950393.9567058
+      },
+      {
+        "id": "item_5cbc4251a827",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "I\u2019m guessing you might want to know about the weather for the next three days? Let me check the forecast for New York for the next three days."
+        ],
+        "interrupted": false,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950395.9628322,
+          "stopped_speaking_at": 1764950402.2791853,
+          "llm_node_ttft": 1.293974000000162,
+          "tts_node_ttfb": 0.7066645000013523,
+          "e2e_latency": 3.412229537963867
+        },
+        "created_at": 1764950393.9742131
+      },
+      {
+        "id": "item_5cbc4251a827/fnc_0",
+        "type": "function_call",
+        "call_id": "call_Tl2O35c2UiNrRHPzLT8uWmfT",
+        "arguments": "{\"location\":\"New York\"}",
+        "name": "get_weather",
+        "created_at": 1764950402.2998338
+      },
+      {
+        "id": "item_a2ad2314634f",
+        "type": "function_call_output",
+        "name": "get_weather",
+        "call_id": "call_Tl2O35c2UiNrRHPzLT8uWmfT",
+        "output": "Current weather in City of New York: -2.6 degrees Celsius, feels like -7.4 degrees. Conditions: clear sky. Humidity: 32%. Wind speed: 7.8 kilometers per hour. Tomorrow's forecast: high of 3.0 degrees, low of -1.0 degrees, moderate snow, 7% chance of precipitation.",
+        "is_error": false,
+        "created_at": 1764950402.2998338
+      },
+      {
+        "id": "item_06c8b4d5420a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.517647,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764950403.6981535,
+          "stopped_speaking_at": 1764950405.7564428,
+          "transcription_delay": 0.0,
+          "end_of_turn_delay": 0.5525481700897217,
+          "on_user_turn_completed_delay": 6.600006599910557e-06
+        },
+        "created_at": 1764950406.3094745
+      },
+      {
+        "id": "item_5f16c2c39c42",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Goodbye."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.719757,
+        "extra": {},
+        "metrics": {
+          "transcription_delay": 0.0,
+          "on_user_turn_completed_delay": 2.3000029614195228e-06
+        },
+        "created_at": 1764950407.3650153
+      },
+      {
+        "id": "item_1fe5fea45566/fnc_0",
+        "type": "function_call",
+        "call_id": "call_gNn3fJ3OuHwPcNgBFJw9vsSD",
+        "arguments": "{}",
+        "name": "hangup_call_tool",
+        "created_at": 1764950407.3728018
+      },
+      {
+        "id": "item_4bf6b95b8595",
+        "type": "function_call_output",
+        "name": "hangup_call_tool",
+        "call_id": "call_gNn3fJ3OuHwPcNgBFJw9vsSD",
+        "output": "",
+        "is_error": false,
+        "created_at": 1764950407.3728018
+      },
+      {
+        "id": "item_283c902a4e90",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Goodbye! Have a great day!"
+        ],
+        "interrupted": false,
+        "extra": {},
+        "metrics": {},
+        "created_at": 1764950411.815906
+      }
+    ]
+  },
+  "timestamp": 1764950414.1478214
+}

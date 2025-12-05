@@ -1,0 +1,21 @@
+# LiveKit SIP Service Configuration
+api_key: APIKey
+api_secret: secretsecretsecretsecret
+ws_url: ws://livekit-server:7880
+
+# Redis
+redis:
+  address: redis:6379
+
+# SIP Settings
+sip:
+  port: 5060
+
+# RTP Media Ports
+rtp_port:
+  start: 10000
+  end: 10100
+
+# Logging
+logging:
+  level: info

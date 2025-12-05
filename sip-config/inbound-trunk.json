@@ -1,0 +1,9 @@
+{
+    "trunk": {
+        "name": "Twilio Inbound",
+        "inbound_addresses": [],
+        "inbound_numbers": ["+1234567890"],
+        "inbound_username": "",
+        "inbound_password": ""
+    }
+}

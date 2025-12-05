@@ -1,0 +1,27 @@
+# LiveKit SIP Service Configuration
+# sip.yaml
+
+# LiveKit connection
+api_key: devkey
+api_secret: secret
+ws_url: ws://livekit-server:7880
+
+# SIP Server Configuration
+sip:
+  # UDP and TCP ports for SIP signaling
+  port: 5060
+  
+  # TLS port (optional, for secure SIP)
+  tls_port: 5061
+  
+  # RTP Media port range
+  rtp_port_low: 10000
+  rtp_port_high: 10100
+
+# Redis connection (shared with LiveKit server)
+redis:
+  address: redis:6379
+
+# Logging
+logging:
+  level: debug

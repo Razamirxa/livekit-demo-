@@ -1,0 +1,9 @@
+{
+    "rule": {
+        "dispatchRuleDirect": {
+            "roomName": "voice-agent-room"
+        }
+    },
+    "trunk_ids": [],
+    "hide_phone_number": false
+}
